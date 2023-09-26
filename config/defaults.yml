@@ -45,15 +45,15 @@ modules:
     -
       name: imagej-rolling-ball
       container: yuanchen12/imagej-rolling-ball
-      version: v2023.8.6
+      version: v2023.9.1
       cmd: |-
         cp ${marker} markers_bs.csv && \
-          rolling-ball --imagej_version="/tmp/Fiji.app" ${image}
+          rolling-ball --imagej_version="/home/mambauser/Fiji.app" ${image}
   segmentation:
     -
       name: unmicst
       container: labsyspharm/unmicst
-      version: 2.7.6
+      version: 2.7.7
       cmd: python /app/unmicstWrapper.py --stackOutput --outputPath .
       input: ''
       channel: --channel
@@ -100,7 +100,7 @@ modules:
   watershed:
     name: s3seg
     container: labsyspharm/s3segmenter
-    version: 1.5.3
+    version: 1.5.5
     channel: --probMapChan
     idxbase: 1
   quantification:
