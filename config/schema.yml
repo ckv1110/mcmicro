@@ -16,6 +16,9 @@ workflow:
   - background
   - cellpose-model
   - background-method
+  - flowsom-model
+  - scanpy-model
+  - fastpg-model
 deprecated:
   quantification-mask: "--quant-opts '--masks ...'"
   illum: --start-at illumination
