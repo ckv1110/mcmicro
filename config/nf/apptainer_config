@@ -1,5 +1,0 @@
-apptainer.enabled    = true
-apptainer.autoMounts = true
-apptainer.runOptions = '-C -H "$PWD"'
-
-params.contPfx = 'docker://'
